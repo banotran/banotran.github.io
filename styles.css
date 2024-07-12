@@ -1,0 +1,51 @@
+html *
+{
+   /* font-size: 1em !important; */
+   color: #09082b !important;
+   font-family: monospace !important;
+}
+
+.logoImage{
+    margin: auto;
+    text-align: center;
+}
+
+.boder {
+    /* border: 1px solid white; */
+    border-radius: 15px;
+}
+.boderRadius {
+    border-radius: 25px; 
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.button{
+    border-radius: 5px; 
+    display: flex;width: 100%;padding:0px;
+}
+
+.screem {
+    height: 100vh;
+    width: 100%;
+    background-color: #1d273d;
+}
+
+.all{
+    background-color: #1d273d;
+    padding-bottom: 5%;
+}
+
+.container{
+    background-color: #387ADF;
+}
+
+.footter{
+    padding-top: 5%;
+    background-image:url("./imageWeb/backgroundtran.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 1%;
+}
