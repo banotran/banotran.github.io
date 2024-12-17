@@ -18,23 +18,23 @@ let data = [
     },
 ];
 
-// Render HTML with screenshot images in a row
 let renderHtml = function (arr) {
     let html = "";
     arr.map((item, index) => {
         html += `
-        <div class="row border mt-4" style="background-color:rgb(255, 244, 205); border-radius: 10px">
-            <div class="col-lg-3" style="padding: 25px">
-                <div style="padding-bottom: 25px">
-                    <img style="border-radius: 10px; width: 90%;"
+        <div class="row border mt-4" style="background-color:rgb(255, 244, 205); border-radius: 10px; padding-bottom: 20px;">
+            <!-- Left Section -->
+            <div class="col-lg-3" style="padding: 25px;">
+                <div style="padding-bottom: 25px;">
+                    <img style="border-radius: 10px; width: 100%; height: auto;"
                         class="img-fluid"
-                        alt=""
+                        alt="Image"
                         src="${item.image}">
                 </div>
-                <div onclick="openLink(this)" data-link="${item.linkIcon}" style="padding-top: 25px">
-                    <div class="btn btn-warning button" style="width: 90%; padding-right: 25px; display: flex; align-items: center;">
+                <div onclick="openLink(this)" data-link="${item.linkIcon}" style="padding-top: 25px;">
+                    <div class="btn btn-warning button" style="width: 100%; padding-right: 25px; display: flex; align-items: center;">
                         <div style="padding: 5px;">
-                            <img src="${item.imageIcon}" alt="" style="width: 50px; height: 50px; padding: 5px;">
+                            <img src="${item.imageIcon}" alt="Icon" style="width: 50px; height: 50px; padding: 5px;">
                         </div>
                         <div style="margin-left: 10px;">
                             <span style="font-size: 18px; padding: 0px; margin: 0px;">${item.textHeaderIcon}</span>
@@ -44,8 +44,9 @@ let renderHtml = function (arr) {
                 </div>
             </div>
 
+            <!-- Right Section -->
             <div class="col-lg-9">
-                <div class="row text-left mt-4" style="padding-right: 20px">
+                <div class="row text-left mt-4" style="padding-right: 20px;">
                     <div class="text-left">
                         <h3>${item.title}</h3>
                     </div>
@@ -54,30 +55,34 @@ let renderHtml = function (arr) {
                     </div>
                 </div>
 
-                <!-- Screen Shot Section -->
-                <div class="row mt-4" style="padding-bottom: 30px; padding-right: 20px">
+                <!-- Screen Shots Section -->
+                <div class="row mt-4" style="padding-bottom: 30px; padding-right: 20px;">
                     <div style="margin-left: 10px;">
-                        <span style="font-size: 18px; padding: 0px; margin: 0px;">Screen shot</span>
+                        <span style="font-size: 18px; padding: 0px; margin: 0px;">Screen Shots</span>
                     </div>
                     <div class="col-lg-12 mt-3">
                         <div style="display: flex; flex-wrap: nowrap; overflow-x: auto;">
                             ${item.screenShot.map((screenshot) => `
-                                <img src="${screenshot}" alt="Screenshot" style="width: auto; height: 150px; margin-right: 15px; border-radius: 10px;">
+                                <img src="${screenshot}" alt="Screenshot" style="width: auto; max-height: 150px; margin-right: 15px; border-radius: 10px;">
                             `).join('')}
                         </div>
                     </div>
                 </div>
 
+                <!-- Video Demo Section -->
                 <div class="row mt-4" style="padding-bottom: 30px; padding-right: 20px;">
-                    <div style="margin-left: 10px;">
-                        <span style="font-size: 18px; padding: 0px; margin: 0px;">Video demo</span>
+                    <div style="margin-left: 10px">
+                        <span style="font-size: 18px; padding: 0px; margin: 0px;">Video Demo</span>
                     </div>
-                    <div class="col-lg-12">
-                        <video controls style="width: ; height: 50%; border-radius: 10px;">
+                    <div class="col-lg-6" style="padding-right: 20px; padding-bottom: 20px">
+                        <video controls style="width: 100%; height: auto; border-radius: 10px;">
                             <source src="${item.videoLink}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
+
+                    <!-- Optional: Add more content or sections in the remaining 50% space -->
+                    <div>If you are interested in the game, please connect to publish: kingcat.games.studio@gmail.com</div>
                 </div>
             </div>
         </div>
@@ -85,6 +90,7 @@ let renderHtml = function (arr) {
     });
     $("#content").append(html);
 };
+
 
 
 renderHtml(data);
