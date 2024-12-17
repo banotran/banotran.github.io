@@ -1,8 +1,8 @@
 html *
 {
    /* font-size: 1em !important; */
-   color: #09082b !important;
-   font-family: monospace !important;
+   color: #773d00 !important;
+   font-family: 'Sour Gummy', sans-serif !important;
 }
 
 .logoImage{
@@ -30,21 +30,20 @@ html *
 .screem {
     height: 100vh;
     width: 100%;
-    background-color: #1d273d;
 }
 
 .all{
-    background-color: #1d273d;
+    background-color: #c59c4a;
     padding-bottom: 5%;
 }
 
 .container{
-    background-color: #387ADF;
+    background-color: #ffde96;
 }
 
 .footter{
     padding-top: 5%;
-    background-image:url("./imageWeb/backgroundtran.png");
+    /* background-image:url("./kingCat/images/footter.png"); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-bottom: 1%;
