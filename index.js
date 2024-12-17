@@ -7,10 +7,14 @@ let data = [
         linkIcon: "https://drive.google.com/file/d/1mkPQkDqh_vrUBUpSPrttAl2qU_xZg-iC/view?usp=sharing",
         textHeaderIcon: "Demo APK", textMoreIcon: "build: 16-12-2024",
         screenShot: [
-            "https://drive.google.com/uc?export=view&id=1Hmhbyjjv6FlZNz1mwsbi8QM-p9dqg_P_",
-            "./kingCat/images/games/blindBag/icon.png"
+            "./kingCat/images/games/blindBag/screenShots/0.png",
+            "./kingCat/images/games/blindBag/screenShots/1.png",
+            "./kingCat/images/games/blindBag/screenShots/2.png",
+            "./kingCat/images/games/blindBag/screenShots/3.png",
+            "./kingCat/images/games/blindBag/screenShots/4.png",
+            "./kingCat/images/games/blindBag/screenShots/5.png"
         ],
-        videoLink: "https://www.youtube.com/watch?v=MTboc85t5iM&ab_channel=L%C3%A3ng"
+        videoLink: "./kingCat/images/games/blindBag/videos/demo.mp4"
     },
 ];
 
@@ -64,13 +68,12 @@ let renderHtml = function (arr) {
                     </div>
                 </div>
 
-                <!-- Video Player Section -->
-                <div class="row mt-4" style="padding-bottom: 30px; padding-right: 20px">
+                <div class="row mt-4" style="padding-bottom: 30px; padding-right: 20px;">
                     <div style="margin-left: 10px;">
                         <span style="font-size: 18px; padding: 0px; margin: 0px;">Video demo</span>
                     </div>
                     <div class="col-lg-12">
-                        <video controls style="width: 100%; border-radius: 10px;">
+                        <video controls style="width: ; height: 50%; border-radius: 10px;">
                             <source src="${item.videoLink}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
