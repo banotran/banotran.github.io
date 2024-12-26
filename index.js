@@ -1,11 +1,11 @@
 let data = [
     {
-        id: 0, title: "Lucky Blind Bag", description: 
-        "A popular game that combines blind bag opening, and using items to play mini games. Designed to keep players engaged by providing a variety of gameplay experiences.",
+        id: 0, title: "Drop Merge Toys", description: 
+        "Drop Merge Toys - fun and relaxing merge puzzle with adorable toy-themed visuals",
         image: "./kingCat/images/games/blindBag/icon.png",
-        imageIcon: "https://img.icons8.com/?size=100&id=32338&format=png&color=000000",
-        linkIcon: "https://drive.google.com/file/d/1mkPQkDqh_vrUBUpSPrttAl2qU_xZg-iC/view?usp=sharing",
-        textHeaderIcon: "Demo APK", textMoreIcon: "build: 16-12-2024",
+        imageIcon: "https://img.icons8.com/?size=100&id=NlSOluQsZbHP&format=png&color=000000",
+        linkIcon: "https://play.google.com/store/apps/details?id=com.teneficgames.dropmerge",
+        textHeaderIcon: "Google Play", textMoreIcon: "v0.0.1",
         screenShot: [
             "./kingCat/images/games/blindBag/screenShots/0.png",
             "./kingCat/images/games/blindBag/screenShots/1.png",
