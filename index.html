@@ -1,71 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>King Cat Studio</title>
-    <link rel="icon" type="image/x-icon" href="./kingCat/images/store/kc.png">
-    
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZLab Games Studio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='black'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-size='38' font-weight='700' fill='white'%3EZ%3C/text%3E%3C/svg%3E" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-    <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Sour Gummy" rel="stylesheet">
+    body {
+      min-height: 100vh;
+      background: #050505;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./imageWeb">
-    <link rel="stylesheet" href="./crossads/images/">
-    <link rel="stylesheet" href="styles.css">
+    .container {
+      max-width: 900px;
+      text-align: center;
+      padding: 64px 32px;
+      border-radius: 28px;
+      background: #111111;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+    }
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CE725ZTKP"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 36px;
+      letter-spacing: 1px;
+    }
 
-    gtag('config', 'G-0CE725ZTKP');
-    </script>
- 
+    h1 {
+      font-size: 64px;
+      line-height: 1.05;
+      margin-bottom: 32px;
+      color: #ffffff;
+    }
+
+    h1 span {
+      color: #ffffff;
+    }
+
+    .keywords {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .keywords span {
+      padding: 12px 24px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.25s;
+      border: 1px solid #ffffff;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(255, 255, 255, 0.25);
+    }
+
+    footer {
+      margin-top: 48px;
+      color: #888888;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 48px 20px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="container">
+    <div class="logo">ZLAB GAMES STUDIO</div>
 
-    <div class="screem">
-        <div class="all">
-            <div class="logoImage">
-                <img src="./kingCat/images/store/logo_transparent.png" style="width: 20%; height: auto">
-            </div>
-            <div class="container boder">
-                <div class="header text-center">
-                    <div class="title container" style="padding-top: 3%;">
-                        <div class="text-center">
-                            <h2>"We are love cats, we are love games"</h2>
-                            <h5>Always looking for opportunities to cooperate with publishers.</h5>
-                            <h5>Contact at: kingcat.games.studio@gmail.com</h5>
-                        </div>
-                    </div>
-                </div>
-                <div id="content" class="content boder" style="padding-top: 2%; padding-bottom: 10%; padding-left: 5%; padding-right: 5%">
-                    <!-- noi dung -->
-                </div>
-                <div class="footter"> 
-                    <div class="text-center">
-                        <div>
-                            <p>@2024 - kingcat.games.studio@gmail.com - HCM</p>
-                        </div>
-                    </div>        
-                </div>     
-            </div>
-        </div>
-        
+    <h1>We Make <span>Puzzle Games</span></h1>
+
+    <div class="keywords">
+      <span>Innovative</span>
+      <span>Smart</span>
+      <span>Fast</span>
+      <span>Polished</span>
     </div>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script src="./index.js"></script>
-</body>
+    <a href="mailto:contact@zlabgames.com" class="btn">Contact Us</a>
 
+    <footer>
+      © 2026 ZLab Games Studio
+    </footer>
+  </div>
+</body>
 </html>
